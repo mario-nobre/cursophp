@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        $valor = $_GET['valor'] ?? 0;
+        $valor = (int)$_GET['valor'] ?? 0;
 
         $n100 = intval($valor / 100);
         $resto100 = $valor % 100;
