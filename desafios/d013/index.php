@@ -34,10 +34,10 @@
         <h2>Saque de R$<?=$valor?> realizado</h2>
         <p>O caixa eletrônico vai te entregar as seguintes notas:</p>
         <ul>
-            <li>x <?=$n100?></li>
-            <li>x <?=$n50?></li>
-            <li>x <?=$n10?></li>
-            <li>x <?=$n5?></li>
+            <li><img src="img/100-reais.jpg" alt="100" width="50%"> x <?=$n100?></li>
+            <li><img src="img/50-reais.jpg" alt="50" width="50%"> x <?=$n50?></li>
+            <li><img src="img/10-reais.jpg" alt="10" width="50%"> x <?=$n10?></li>
+            <li><img src="img/5-reais.jpg" alt="5" width="50%"> x <?=$n5?></li>
         </ul>
     </section>
 </body>
