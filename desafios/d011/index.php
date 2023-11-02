@@ -19,7 +19,7 @@
             <label for="valor">Preço do Produto? (R$)</label>
             <input type="number" name="valor" id="valor" value="<?=$valorIni?>" step="0.01">
             <label for="taxa">Qual será o percentual de reajuste? <strong><span id="rangeValue"><?=$taxa?></span>%</strong></label>
-            <input type="range" name="taxa" id="idtaxa" value="<?=$taxa?>" min="0" max="100">
+            <input type="range" name="taxa" id="idtaxa" value="<?=$taxa?>" min="0" max="100" oninput="mudaValor()">
 
             <input type="submit" value="Reajustar">
         </form>
@@ -30,12 +30,17 @@
 </body>
 <script>
     // Selecionar o elemento de input range e o elemento de exibição do valor
-    const rangeInput = document.getElementById('idtaxa');
-    const rangeValue = document.getElementById('rangeValue');
+    //const rangeInput = document.getElementById('idtaxa');
+    //const rangeValue = document.getElementById('rangeValue');
 
     // Atualizar o valor exibido em tempo real
-    rangeInput.addEventListener('input', function() {
-        rangeValue.textContent = rangeInput.value;
-        });
+    //rangeInput.addEventListener('input', function() {
+        //rangeValue.textContent = rangeInput.value;
+        //});
+        
+    function mudaValor() {
+        rangeValue.innerText = idtaxa.value;
+    }
+
 </script>
 </html>
